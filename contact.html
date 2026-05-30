@@ -1,0 +1,118 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Mayor Tech Pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <canvas id="particles-canvas"></canvas>
+  
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">MAYOR<span>TECH</span> PRO</a>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html" class="active">CONTACT</a></li>
+      </ul>
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Let's <span>Connect</span></h1>
+      <p>Ready to build something awesome? Hit me up.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-form-section">
+    <div class="container">
+      <div class="contact-wrapper">
+        <!-- Left side - Contact Info -->
+        <div class="contact-info">
+          <i class="fas fa-envelope-open-text"></i>
+          <h3>Get in touch</h3>
+          <p><i class="fab fa-twitter"></i> @MayorTechpro</p>
+          <p><i class="fas fa-envelope"></i> mayor@mayortechpro.dev</p>
+          <p><i class="fas fa-map-marker-alt"></i> Web Design Agency · Remote</p>
+          <div class="cv-download">
+            <a href="cv/Mayor-Tech-Pro-CV.pdf" class="btn-outline" target="_blank">
+              <i class="fas fa-file-pdf"></i> Download CV
+            </a>
+          </div>
+        </div>
+        
+        <!-- Right side - Contact Form (Firebase enabled) -->
+        <div class="contact-form">
+          <form id="firebase-contact-form">
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="email" id="email" placeholder="Email address" required>
+            <textarea id="message" rows="5" placeholder="Tell me about your project..."></textarea>
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-paper-plane"></i> Send message
+            </button>
+            <p id="form-status" class="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>MAYOR TECH PRO</h3>
+        <p>Future Software Developer. Web Design Agency.</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="cv/Mayor-Tech-Pro-CV.pdf" target="_blank">Download CV</a></li>
+          <li><a href="contact.html">Hire Me</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Daily Motto</h4>
+        <p>"Success is the sum of small efforts repeated daily."</p>
+        <span class="footer-badge">#100DaysOfCode</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Mayor Tech Pro — Consistency Every Day</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/firebase.js"></script>
+</body>
+</html>
